@@ -1,50 +1,13 @@
-# React + TypeScript + Vite
+=> TAILWIND CSS PROPERTIES 
+1) sticky top-0 z-50 w-full bg-background/95 backdrop-blur
+-- sticky: Sets the element's position to sticky.
+--top-0:   Specifies the vertical position of the element when it is in sticky mode. top-0 means the element will stick to the very top of its containing block.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+--z-50:  Controls the stacking order of the element. Higher z-index values make the element appear in front of elements with lower z-index values.
+ 
+ --bg-background/95: Applies a background color to the element. background refers to a color from the Tailwind CSS theme or custom configuration. /95 sets the opacity of the background color to 95%.
 
-Currently, two official plugins are available:
+ --backdrop-blur: Applies a blur effect to the background behind the element. Creates a frosted glass-like effect, often used in combination with translucent backgrounds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+ 2) JS properties 
+ --$ : string template
